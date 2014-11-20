@@ -1,0 +1,5 @@
+lbs:
+  source:
+    download: 
+      nsis-2.46-src.tar.bz2: "http://downloads.sourceforge.net/project/nsis/NSIS%202/2.46/nsis-2.46-src.tar.bz2"
+      nsis-2.46.zip: "http://downloads.sourceforge.net/project/nsis/NSIS%202/2.46/nsis-2.46.zip"
