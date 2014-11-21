@@ -8,7 +8,9 @@ Release: %{release}
 Packager: Timotheus Pokorra <timotheus.pokorra@solidcharity.com>
 License: zlib/libpng
 Group: Office Suite and Productivity
-BuildRequires: gcc gcc-c++ glibc-devel.i686 scons
+BuildRequires: gcc gcc-c++ 
+# yum-builddep says: Error: No Package found for glibc-devel.i686. Therefore we install it manually in setup.sh
+#BuildRequires: glibc-devel.i686 scons
 BuildRoot: /tmp/buildroot
 Source: nsis-%{version}-src.tar.bz2
 Source1: nsis-%{version}.zip
