@@ -1,5 +1,5 @@
 %define name nsis
-%define version 2.64
+%define version 2.46
 
 Summary: Nullsoft Scriptable Install System
 Name: %{name}
