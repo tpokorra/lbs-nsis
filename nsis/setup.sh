@@ -1,1 +1,1 @@
-yum install glibc-devel.i686
+yum -y install glibc-devel.i686
