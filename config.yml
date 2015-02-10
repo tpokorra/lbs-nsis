@@ -2,3 +2,5 @@ lbs:
   centos:
     '6':
       repos: ['http://prdownloads.sourceforge.net/scons/scons-2.3.4-1.noarch.rpm']
+    '7':
+      repos: ['http://prdownloads.sourceforge.net/scons/scons-2.3.4-1.noarch.rpm']
