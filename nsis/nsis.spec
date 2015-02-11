@@ -18,6 +18,7 @@ BuildRequires: gcc gcc-c++ scons
 BuildRoot: /tmp/buildroot
 Source: nsis-%{version}-src.tar.bz2
 Source1: nsis-%{version}.zip
+Patch1: gcc46NameLookupChanges.patch
 
 %description
 NSIS (Nullsoft Scriptable Install System) is a professional open source system to create Windows installers.
@@ -26,6 +27,7 @@ NSIS (Nullsoft Scriptable Install System) is a professional open source system t
 [ -d $RPM_BUILD_ROOT ] && [ "/" != "$RPM_BUILD_ROOT" ] && rm -rf $RPM_BUILD_ROOT
 %setup -q -n nsis-%{version}-src
 unzip ../../SOURCES/nsis-%{version}.zip
+%patch1 -p1
 
 %build
 scons SKIPSTUBS=all SKIPPLUGINS=all SKIPUTILS=all SKIPMISC=all NSIS_CONFIG_CONST_DATA_PATH=no PREFIX=`pwd`/nsis-%{version} install-compiler
@@ -47,5 +49,7 @@ cd $RPM_BUILD_ROOT/usr/local/nsis; ln -s . bin
 %post
 
 %changelog
+* Wed Feb 11 2015 Timotheus Pokorra <timotheus.pokorra@solidcharity.com>
+- Fix build for CentOS7
 * Thu Nov 20 2014 Timotheus Pokorra <timotheus.pokorra@solidcharity.com>
 - First build
