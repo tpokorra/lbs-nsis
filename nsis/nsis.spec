@@ -5,6 +5,10 @@
 %define __spec_install_post /usr/lib/rpm/brp-compress
 %define __os_install_post /usr/lib/rpm/brp-compress
 
+# do not build a debuginfo package. this avoids error on CentOS7:
+# Fehler: Datei /root/rpmbuild/BUILD/nsis-2.46-src/debugfiles.list aus %files konnte nicht geöffnet: Datei oder Verzeichnis nicht gefunden
+%define debug_package %{nil}
+
 Summary: Nullsoft Scriptable Install System
 Name: %{name}
 Version: %{version}
