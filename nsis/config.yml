@@ -1,5 +1,5 @@
 lbs:
   source:
     download: 
-      nsis-3.0-src.tar.bz2: "https://sourceforge.net/projects/nsis/files/NSIS%203/3.0/nsis-3.0-src.tar.bz2/download"
-      nsis-3.0.zip: "https://sourceforge.net/projects/nsis/files/NSIS%203/3.0/nsis-3.0.zip/download"
+      nsis-3.01-src.tar.bz2: "https://sourceforge.net/projects/nsis/files/NSIS%203/3.01/nsis-3.01-src.tar.bz2/download"
+      nsis-3.01.zip: "https://sourceforge.net/projects/nsis/files/NSIS%203/3.01/nsis-3.01.zip/download"

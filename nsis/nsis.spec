@@ -1,5 +1,6 @@
 %define name nsis
-%define version 3.0
+%define version 3.01
+%define rpmversion 3.0.1
 
 # work around to include windows binaries, see https://www.redhat.com/archives/rhl-devel-list/2006-June/msg00822.html
 %define __spec_install_post /usr/lib/rpm/brp-compress
@@ -11,7 +12,7 @@
 
 Summary: Nullsoft Scriptable Install System
 Name: %{name}
-Version: %{version}
+Version: %{rpmversion}
 Release: %{release}
 Packager: Timotheus Pokorra <timotheus.pokorra@solidcharity.com>
 License: zlib/libpng
@@ -51,6 +52,8 @@ cd $RPM_BUILD_ROOT/usr/local/nsis; ln -s . bin
 %post
 
 %changelog
+* Fri Jan 20 2017 Timotheus Pokorra <tp@tbits.net> - 3.0.1
+- Upgrade to NSIS 3.01
 * Wed Sep 28 2016 Timotheus Pokorra <timotheus.pokorra@solidcharity.com> - 3.0
 - Upgrade to NSIS 3.0
 * Wed Feb 11 2015 Timotheus Pokorra <timotheus.pokorra@solidcharity.com>
