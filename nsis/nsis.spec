@@ -1,6 +1,5 @@
 %define name nsis
 %define version 3.01
-%define rpmversion 3.0.1
 
 # work around to include windows binaries, see https://www.redhat.com/archives/rhl-devel-list/2006-June/msg00822.html
 %define __spec_install_post /usr/lib/rpm/brp-compress
@@ -12,7 +11,7 @@
 
 Summary: Nullsoft Scriptable Install System
 Name: %{name}
-Version: %{rpmversion}
+Version: %{version}
 Release: %{release}
 Packager: Timotheus Pokorra <timotheus.pokorra@solidcharity.com>
 License: zlib/libpng
