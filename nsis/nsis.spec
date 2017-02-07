@@ -40,6 +40,7 @@ mkdir -p $RPM_BUILD_ROOT/usr/local/nsis
 cp -r `pwd`/nsis-%{version}/* $RPM_BUILD_ROOT/usr/local/nsis
 cp -r `pwd`/build/urelease/makensis/makensis $RPM_BUILD_ROOT/usr/local/nsis
 cd $RPM_BUILD_ROOT/usr/local/nsis; ln -s . bin
+cd $RPM_BUILD_ROOT/usr/local; ln -s nsis/{Contrib,Include,Stubs} .
 
 %clean
 # Clean up after ourselves, but be careful in case someone sets a bad buildroot
