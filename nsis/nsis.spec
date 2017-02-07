@@ -56,6 +56,8 @@ cd $RPM_BUILD_ROOT/usr/local; ln -s nsis/{Contrib,Include,Plugins,Stubs} .
 %post
 
 %changelog
+* Tue Feb 07 2017 Timotheus Pokorra <tp@tbits.net> - 3.0.1-2
+- need symbolic links with CentOS6
 * Fri Jan 20 2017 Timotheus Pokorra <tp@tbits.net> - 3.0.1
 - Upgrade to NSIS 3.01
 * Wed Sep 28 2016 Timotheus Pokorra <timotheus.pokorra@solidcharity.com> - 3.0
